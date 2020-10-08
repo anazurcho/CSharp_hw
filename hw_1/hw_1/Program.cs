@@ -7,13 +7,15 @@ namespace hw_1
     {
         static void Main(string[] args)
         {
+
+            //ბევრი უკეთესი ვერსია არსებობს
             Dictionary<int, List<string>> users = new Dictionary<int, List<string>>()
             {
                 {1, new List<String>(){"ana", "zurabashvili","Tbilisi"}},
                 {2, new List<String>(){"Tornike", "Gomareli","Tbilisi"}},
                 {3, new List<String>(){"username", "userlastname","Tbilisi"}},
             };
-
+            //ვაპირებდი key ს დაგენერირებას და მერე იუზერის შექმნისას გადაცემას მაგრამ ასე დავტოვე 
             foreach (var item in users.Keys)
             {
                 Console.WriteLine( $"{item} {string.Join(", ", users[item])}");
